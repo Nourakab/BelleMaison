@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Calcul de l'hypotheque</title>
+  </head>
+  <script type="text/javascript" src="calculhypotheque.js"></script>
+  <body>
+    <div class="tabContent2" id="Calcul Hypothecaire">
+      <h2>Calcul Hypothécaire</h2>
+      <div>
+        <p>Financez votre prochaine maison commence ici!</p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <form name="formulaire" action="#">
+      <br /><br />
+      <label for="montant">Montant à emprunter </label>
+      <input id="montant" type="text" /><br /><br /><br />
+      <label for="taux">Taux d'intérêt</label>
+      <input id="taux" type="text" /><br /><br /><br />
+      <label for="terme">Terme</label>
+      <input id="terme" type="text" /><br /><br /><br />
+
+      <div class="button-container">
+        <input
+          class="buttonInfosClients"
+          type="button"
+          name="Initialiser"
+          value="Initialiser"
+          onclick="this.form.reset();"
+        />
+        <input
+          class="buttonInfosClients"
+          type="button"
+          value="Calculer"
+          onclick="calculer(this.form);"
+        />
+      </div>
+    </form>
+    <footer>
+      <img class="basDePage" src="image/basDePage.PNG" />
+    </footer>
+  </body>
+</html>

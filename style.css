@@ -1,0 +1,176 @@
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #edf5f7;
+  font-size: 80%;
+  font-family: "Lucida Grande", Verdana, Arial, Sans-Serif;
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+}
+ul#tabs {
+  list-style-type: none;
+  margin: 30px 0 0 0;
+  padding: 0 0 0.3em 0;
+}
+ul#tabs li {
+  display: inline;
+} /* Fait apparaitre les tabs tout au long */
+ul#tabs li a {
+  color: #42454a;
+  background-color: #dedbde;
+  border: 1px solid #c9c3ba;
+  border-bottom: none;
+  padding: 0.3em;
+  text-decoration: none;
+}
+ul#tabs li a:hover {
+  color: #0000cc;
+  background-color: #f1f0ee;
+}
+ul#tabs li a.selected {
+  color: #000;
+  background-color: #f1f0ee;
+  font-weight: bold;
+  padding: 0.7em 0.3em 0.38em 0.3em;
+}
+
+div.tabContent {
+  border: 1px solid #c9c3ba;
+  padding: 0.5em;
+  background-color: #f1f0ee;
+}
+div.tabContent2 {
+  border: 1px solid #c9c3ba;
+  padding: 0.5em;
+  background-color: #f1f0ee;
+}
+div.tabContent.hide {
+  display: none;
+}
+
+.logo {
+  display: inline-block;
+  margin-right: 10px;
+}
+.text {
+  /* // paddingRight:20px;
+	float:right; */
+  display: inline-block;
+  font-size: 250%;
+  font-family: "Brush Script MT";
+  color: #0000cc;
+}
+.moving {
+  width: 80%;
+  height: 635px;
+  margin-left: 133px;
+}
+
+form.formulaire {
+  float: right;
+}
+input.nom {
+  float: center;
+}
+
+.menu-container {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 100%;
+  position: static;
+  width: 93%;
+  margin-left: 44px;
+  border: none;
+  padding-right: 44px;
+  z-index: 1;
+  overflow: visible;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+label,
+input {
+  /* In order to define widths */
+  display: inline-block;
+}
+
+label {
+  width: 30%;
+  /* Positions the label text beside the input */
+  text-align: right;
+}
+
+label + input {
+  width: 30%;
+  /* Large margin-right to force the next element to the new-line
+           and margin-left to create a gutter between the label and input */
+  margin: 0 30% 0 4%;
+}
+
+/* Only the submit button is matched by this selector,
+       but to be sure you could use an id or class for that button */
+
+input + input {
+  float: right;
+}
+
+.buttonInfosClients {
+  font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  background: rgb(0, 106, 255);
+  border: 1px solid rgb(0, 106, 255);
+  border-radius: 4px;
+  color: white;
+  height: 32px;
+  padding: 0px 0.67em;
+}
+
+.button-container {
+  margin-left: 265px;
+  margin-right: 393px;
+  margin-top: 60px;
+}
+
+.type-propriete {
+  display: flex; /* or inline-flex */
+  flex-direction: row;
+}
+.propriete {
+  padding: 60px;
+}
+.test1_ligne1 {
+  color: #0000cc;
+  font-weight: bold;
+  font-size: medium;
+  font-style: italic;
+}
+.apropos {
+  color: #0000cc;
+  padding: 124px;
+  padding-top: 48px;
+  text-align: justify;
+  text-align: center;
+}
+
+.basDePage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

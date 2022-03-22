@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Infos Clients</title>
+  </head>
+  <script type="text/javascript" src="infosclients.js"></script>
+  <body>
+    <div class="tabContent" id="Infos Clients">
+      <h2>Infos Clients</h2>
+      <div>
+        <p>
+          Remplir chaque champ du formulaire afin de procéder à votre évaluation
+          hypothécaire.
+        </p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <form name="formulaire" action="#">
+      <label for="nom">Nom</label>
+      <input id="nom" type="text" /><br /><br /><br />
+      <label for="prenom">Prénom</label>
+      <input id="prenom" type="text" /><br /><br /><br />
+      <label for="email">Email</label>
+      <input id="email" type="text" /><br /><br /><br />
+      <label for="adresse">Adresse</label>
+      <input id="adresse" type="text" /><br /><br /><br />
+      <label for="date_de_naissance">Date de naissance</label>
+      <input id="date_de_naissance" type="text" />
+
+      <div class="button-container">
+        <input
+          class="buttonInfosClients"
+          type="button"
+          name="Initialiser"
+          value="Initialiser"
+          onclick="this.form.reset();"
+        />
+        <input
+          class="buttonInfosClients"
+          type="button"
+          value="Valider"
+          onclick="confirmer(this.form);"
+        />
+      </div>
+    </form>
+    <footer>
+      <img class="basDePage" src="image/basDePage.PNG" />
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Types de proprietes</title>
+  </head>
+  <script type="text/javascript" src="typesdeproprietes.js"></script>
+  <body>
+    <div class="tabContent2" id="Calcul Hypothecaire">
+      <h2>Types de propriétés</h2>
+      <div>
+        <p>A house to call home!!!</p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="type-propriete">
+      <img
+        id="myImage"
+        onclick="changeImage()"
+        src="image/maisonunifamiliale.jpg"
+        width="180"
+        height="180"
+      />
+
+      <div class="propriete">
+        <div id="test1" style="display: block">  <span class="test1_ligne1">1200 000 $</span> <br/><br/>
+          <b>Maison Unifamilale à vendre </b> <br/><br/> 
+          2050, Ave desChamps <br/>
+          Quartier de la belle Vie</div>
+        <div id="test2" style="display: none"> <span class="test1_ligne1">800 000 $</span> <br/><br/>
+          <b>Condominium à vendre </b> <br/><br/> 
+          39, Rue des Grands-Smart <br/>
+          Cocoon City</div>
+        <div id="test3" style="display: none"> <span class="test1_ligne1">1500 000 $</span> <br/><br/>
+          <b>Duplex à vendre </b> <br/><br/> 
+          125, Rue des Avocats <br/>
+          Rodriguez</div>
+        <div id="test4" style="display: none"><span class="test1_ligne1">1500 000 $</span> <br/><br/>
+          <b>Fermette à vendre </b> <br/><br/> 
+          679, Rue des Moutons <br/>
+          Saint-meuh-meuh</div>         
+        </div>
+    </div>
+    <table>
+      <tr>
+        <td>
+          <a href="#" id="1" onclick="changeImage(this.id)"> <b>
+            Maisons Unifamilales</b></a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#" id="2" onclick="changeImage(this.id)"> <b>Condominiums</b></a>
+        </td>
+      </tr>
+      <tr>
+        <td><a href="#" id="3" onclick="changeImage(this.id)"> <b> Duplex</b></a></td>
+      </tr>
+      <tr>
+        <td><a href="#" id="4" onclick="changeImage(this.id)"> <b> Fermette </b></a></td>
+      </tr>
+    </table>
+  </body>
+</html>
